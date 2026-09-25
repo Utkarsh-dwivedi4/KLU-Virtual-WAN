@@ -1,16 +1,68 @@
-# React + Vite
+# 🌐 KLU Virtual WAN – Enterprise Multi-Campus Network Monitoring
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Microsoft Azure based Virtual WAN dashboard that simulates secure connectivity between multiple KLU campuses using Azure Virtual WAN, VPN Gateway, Virtual Networks and Hub architecture.
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+KLU Virtual WAN is a network monitoring dashboard developed for a hackathon. It visualizes how three university campuses connect securely through a centralized Azure Virtual WAN Hub.
 
-## React Compiler
+The project contains:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎨 React + Vite Frontend Dashboard
+- ⚙️ Node.js + Express Backend API
+- ☁️ Azure Virtual WAN Architecture
+- 📊 Real-time traffic & latency simulation
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Architecture
+
+Campus 1 ─┐
+           │
+Campus 2 ──┼── Azure Virtual WAN Hub ── VPN Gateway ── Azure Cloud
+           │
+Campus 3 ─┘
+
+Technologies used:
+
+- Microsoft Azure Virtual WAN
+- Azure Virtual Network (VNet)
+- Azure VPN Gateway
+- React + Vite
+- Node.js + Express
+- Recharts
+
+---
+
+## 📁 Repository Structure
+
+KLU-Virtual-WAN/
+
+├── frontend/ # React Dashboard
+
+├── backend/ # Express Backend
+
+├── Azure/ # Azure resource screenshots
+
+└── README.md
+
+---
+
+## ✨ Features
+
+- Live Network Topology
+- VPN Site Status
+- Azure Resource Inspector
+- Global VPN Backbone
+- Traffic Analytics Graph
+- Dynamic latency simulation
+- Interactive Azure architecture visualization
+
+---
+
+## 🚀 Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
