@@ -1,3 +1,7 @@
+/* =========================
+   LIVE NETWORK TOPOLOGY
+========================= */
+
 .topology{
   display:flex;
   align-items:center;
@@ -85,7 +89,9 @@
   transform:scale(1.05);
 }
 
-/* Global VPN Map */
+/* =========================
+   GLOBAL VPN BACKBONE
+========================= */
 
 .worldMap{
   display:flex;
@@ -115,18 +121,9 @@
   animation:heartbeat 2s infinite;
 }
 
-.green{
-  background:#0bb64f;
-}
-
-.cyan{
-  background:#13b8df;
-  color:#041d2b;
-}
-
-.purple{
-  background:#8c2bff;
-}
+.green{background:#0bb64f;}
+.cyan{background:#13b8df;color:#041d2b;}
+.purple{background:#8c2bff;}
 
 .vpnLine{
   flex:1;
@@ -148,32 +145,11 @@
   box-shadow:0 0 10px cyan;
 }
 
-.delay{
-  animation-delay:1s;
-}
+.delay{animation-delay:1s;}
 
-@keyframes move{
-  0%{left:-10px;}
-  100%{left:120px;}
-}
-
-@keyframes pulse{
-  0%{transform:scale(1);}
-  50%{transform:scale(1.4);}
-  100%{transform:scale(1);}
-}
-
-@keyframes travel{
-  0%{left:-10px;}
-  100%{left:100%;}
-}
-
-@keyframes heartbeat{
-  0%{transform:scale(1);}
-  50%{transform:scale(1.08);}
-  100%{transform:scale(1);}
-}
-/* Azure Architecture */
+/* =========================
+   AZURE ARCHITECTURE
+========================= */
 
 .architecture{
   display:flex;
@@ -201,7 +177,9 @@
   transform:translateY(-4px) scale(1.03);
 }
 
+/* Box Colors */
 .campus{background:#0b7d3e;}
+.vpnsite{background:#ea580c;color:white;}
 .vnet{background:#2563eb;}
 .hub{background:#06b6d4;color:#00253d;}
 .gateway{background:#7c3aed;}
@@ -240,11 +218,6 @@
   animation:flow 1.5s linear infinite;
 }
 
-@keyframes flow{
-  0%{left:-16px;}
-  100%{left:100%;}
-}
-
 .statusDot{
   width:10px;
   height:10px;
@@ -255,6 +228,10 @@
   right:10px;
   animation:pulse 1s infinite;
 }
+
+/* =========================
+   LEGEND
+========================= */
 
 .legend{
   display:flex;
@@ -280,3 +257,34 @@
 .green{background:#00ff6a;}
 .blue{background:#38bdf8;}
 .yellow{background:#facc15;}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes move{
+  0%{left:-10px;}
+  100%{left:120px;}
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.4);}
+  100%{transform:scale(1);}
+}
+
+@keyframes travel{
+  0%{left:-10px;}
+  100%{left:100%;}
+}
+
+@keyframes heartbeat{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.08);}
+  100%{transform:scale(1);}
+}
+
+@keyframes flow{
+  0%{left:-16px;}
+  100%{left:100%;}
+}
